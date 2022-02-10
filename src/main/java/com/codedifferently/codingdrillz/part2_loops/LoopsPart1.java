@@ -6,7 +6,14 @@ public class LoopsPart1 {
      * even integers between start up to and not including stop.
      */
     public static String getEvenNumbers(int start, int stop) {
-        return null;
+        StringBuilder evenNumbers = new StringBuilder();
+
+        for (int i = start; i < stop; i++) {
+            if (i % 2 == 0) {
+                evenNumbers.append(i);
+            }
+        }
+        return evenNumbers.toString();
     }
 
 
@@ -15,7 +22,15 @@ public class LoopsPart1 {
      * integers between start up to and not including stop.
      */
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        StringBuilder oddNumbers = new StringBuilder();
+
+        for (int i = start; i < stop; i++) {
+            if (i % 2 != 0) {
+                oddNumbers.append(i);
+            }
+        }
+        return oddNumbers.toString();
+
     }
 
 
@@ -24,7 +39,15 @@ public class LoopsPart1 {
      * squared between start up to and not including stop.
      */
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+        StringBuilder oddNumbers = new StringBuilder();
+
+        for (int i = start; i < stop; i += step) {
+
+            oddNumbers.append(i * i);
+        }
+
+        return oddNumbers.toString();
+
     }
 
     /**
@@ -32,7 +55,15 @@ public class LoopsPart1 {
      * all integers between 0 up to and not including stop.
      */
     public static String getRange(int stop) {
-        return null;
+        StringBuilder range = new StringBuilder();
+
+        for (int i = 0; i < stop; i++) {
+
+            range.append(i);
+        }
+
+        return range.toString();
+
     }
 
     /**
@@ -40,7 +71,15 @@ public class LoopsPart1 {
      * between start up to and not including stop.
      */
     public static String getRange(int start, int stop) {
-        return null;
+        StringBuilder range = new StringBuilder();
+
+        for (int i = start; i < stop; i++) {
+
+            range.append(i);
+        }
+
+        return range.toString();
+
     }
 
 
@@ -49,7 +88,15 @@ public class LoopsPart1 {
      * all integers between start, incrementing by step, up to and not including stop.
      */
     public static String getRange(int start, int stop, int step) {
-        return null;
+        StringBuilder range = new StringBuilder();
+
+        for (int i = start; i <= stop - 1; i += step) {
+
+            range.append(i);
+        }
+
+        return range.toString();
+
     }
 
 
@@ -59,6 +106,14 @@ public class LoopsPart1 {
      * incrementing by the specified step.
      */
     public static String getExponentiation(int start, int stop, int step, int exponent) {
-        return null;
+        StringBuilder range = new StringBuilder();
+
+        for (int i = start; i < stop; i += step) {
+
+            range.append((int)Math.pow(i, exponent));
+        }
+
+        return range.toString();
+
     }
 }

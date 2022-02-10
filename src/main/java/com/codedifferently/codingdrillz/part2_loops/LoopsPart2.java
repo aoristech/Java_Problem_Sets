@@ -1,6 +1,9 @@
 package com.codedifferently.codingdrillz.part2_loops;
 
 public class LoopsPart2 {
+
+
+
     /**
      * Generate a String representation of a multiplication table whose dimensions are 4 by 4
      *   1 |  2 |  3 |  4 |
@@ -9,8 +12,17 @@ public class LoopsPart2 {
      *   4 |  8 | 12 | 16 |
      * @return
      */
-    public String getSmallMultiplicationTable() {
-        return null;
+    public static String getSmallMultiplicationTable() {
+
+        String result = "";
+        int tableSize = 4;
+        for(int i = 1 ;i<=tableSize;i++) {
+            for(int j=1;j<=tableSize;j++) {
+                result += String.format("%3d |", (i*j));
+            }
+            result += "\n";
+        }
+        return (result);
     }
 
     /**
@@ -26,8 +38,16 @@ public class LoopsPart2 {
      * 9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 | 90 |
      * 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |100 |
      */
-    public String getLargeMultiplicationTable() {
-        return null;
+    public static String getLargeMultiplicationTable() {
+        String result = "";
+        int tableSize = 9;
+        for(int i = 1 ;i<=tableSize;i++) {
+            for(int j=1;j<=tableSize;j++) {
+                result += String.format("%3d |", (i*j));
+            }
+            result += "\n";
+        }
+        return result;
     }
 
     /**
@@ -41,7 +61,15 @@ public class LoopsPart2 {
      *  5 | 10 | 15 | 20 | 25 | 30 |
      *  6 | 12 | 18 | 24 | 30 | 36 |
      */
-    public String getMultiplicationTable(int tableSize) {
-        return null;
+    public static String getMultiplicationTable ( int tableSize){
+        String result = "";
+        for(int i = 1 ;i<=tableSize;i++) {
+            for(int j=1;j<=tableSize;j++) {
+                result += String.format("%3d |", (i*j));
+            }
+            result += "\n";
+        }
+        return result;
+
     }
 }
